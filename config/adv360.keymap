@@ -29,13 +29,12 @@
       flavor = "tap-preferred";
       bindings = <&kp>, <&kp>;
     };
+
     copy_paste: copy_paste {
       compatible = "zmk,behavior-tap-dance";
       label = "COPY_PASTE";
       #binding-cells = <0>;
-      bindings =
-      <&kp LG(C)>,
-      <&kp LG(V)>;
+      bindings = <&kp LG(C)>, <&kp LG(V)>;
 
       tapping-term-ms = <125>;
     };
