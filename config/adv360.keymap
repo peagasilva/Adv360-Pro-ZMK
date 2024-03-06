@@ -82,6 +82,16 @@
             bindings = <&caps_word>;
             key-positions = <32 41>;
         };
+
+        combo_select_all {
+            bindings = <&kp LG(A)>;
+            key-positions = <50 47>;
+        };
+
+        combo_undo {
+            bindings = <&kp LG(Z)>;
+            key-positions = <50 48>;
+        };
     };
 
     keymap {
