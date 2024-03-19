@@ -64,10 +64,28 @@
             hold-trigger-key-positions = <12 13 21 22 23 24 25 26 27 37 38 39 40 41 42 43 44 45 53 54 55 56 57 58 59 68 69 70 71 72 73 74 75 7 8 9 10 11 36 52 65 66 67 35>;
         };
 
+        key_lh_c1r1: key_lh_c1r1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "KEY_LH_C1R1";
+            bindings = <&kp LS(N4)>, <&kp LS(TILDE)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        key_lh_c2r1: key_lh_c2r1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "KEY_LH_C2R1";
+            bindings = <&kp LS(EQUAL)>, <&kp N1>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
         key_lh_c3r1: key_lh_c3r1 {
             compatible = "zmk,behavior-mod-morph";
             label = "KEY_LH_C3R1";
-            bindings = <&kp LS(LEFT_BRACKET)>, <&kp LS(NUMBER_2)>;
+            bindings = <&kp LS(LEFT_BRACKET)>, <&kp N2>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -76,7 +94,7 @@
         key_lh_c4r1: key_lh_c4r1 {
             compatible = "zmk,behavior-mod-morph";
             label = "KEY_LH_C4R1";
-            bindings = <&kp LEFT_BRACKET>, <&kp LS(NUMBER_3)>;
+            bindings = <&kp LEFT_BRACKET>, <&kp N3>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -85,7 +103,16 @@
         key_lh_c5r1: key_lh_c5r1 {
             compatible = "zmk,behavior-mod-morph";
             label = "KEY_LH_C5R1";
-            bindings = <&kp LS(N9)>, <&kp LS(N4)>;
+            bindings = <&kp LS(N9)>, <&kp N4>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        key_lh_c6r1: key_lh_c6r1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "KEY_LH_C6R1";
+            bindings = <&kp EQUAL>, <&kp N5>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -94,7 +121,7 @@
         key_rh_c2r1: key_rh_c2r1 {
             compatible = "zmk,behavior-mod-morph";
             label = "KEY_RH_C2R1";
-            bindings = <&kp LS(N7)>, <&kp LS(NUMBER_6)>;
+            bindings = <&kp LS(N7)>, <&kp N6>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -103,7 +130,7 @@
         key_rh_c3r1: key_rh_c3r1 {
             compatible = "zmk,behavior-mod-morph";
             label = "KEY_RH_C3R1";
-            bindings = <&kp LS(N0)>, <&kp LS(N7)>;
+            bindings = <&kp LS(N0)>, <&kp N7>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -112,7 +139,7 @@
         key_rh_c4r1: key_rh_c4r1 {
             compatible = "zmk,behavior-mod-morph";
             label = "KEY_RH_C4R1";
-            bindings = <&kp RIGHT_BRACKET>, <&kp LS(N8)>;
+            bindings = <&kp RIGHT_BRACKET>, <&kp N8>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -121,7 +148,7 @@
         key_rh_c5r1: key_rh_c5r1 {
             compatible = "zmk,behavior-mod-morph";
             label = "KEY_RH_C5R1";
-            bindings = <&kp LS(RIGHT_BRACKET)>, <&kp LS(N9)>;
+            bindings = <&kp LS(RIGHT_BRACKET)>, <&kp N9>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -130,7 +157,7 @@
         key_rh_c6r1: key_rh_c6r1 {
             compatible = "zmk,behavior-mod-morph";
             label = "KEY_RH_C6R1";
-            bindings = <&kp LS(N8)>, <&kp LS(N0)>;
+            bindings = <&kp LS(N8)>, <&kp N0>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
