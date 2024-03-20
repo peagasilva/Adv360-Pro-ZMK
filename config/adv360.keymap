@@ -67,7 +67,7 @@
         key_lh_c1r1: key_lh_c1r1 {
             compatible = "zmk,behavior-mod-morph";
             label = "KEY_LH_C1R1";
-            bindings = <&kp LS(N4)>, <&kp LS(TILDE)>;
+            bindings = <&kp LS(EQUAL)>, <&kp LS(TILDE)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -76,7 +76,7 @@
         key_lh_c2r1: key_lh_c2r1 {
             compatible = "zmk,behavior-mod-morph";
             label = "KEY_LH_C2R1";
-            bindings = <&kp LS(EQUAL)>, <&kp N1>;
+            bindings = <&kp LS(N1)>, <&kp N1>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -158,6 +158,15 @@
             compatible = "zmk,behavior-mod-morph";
             label = "KEY_RH_C6R1";
             bindings = <&kp LS(N8)>, <&kp N0>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        space_command: space_command {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SPACE_COMMAND";
+            bindings = <&kp SPACE>, <&kp LEFT_GUI>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
