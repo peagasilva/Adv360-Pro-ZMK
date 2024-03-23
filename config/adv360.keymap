@@ -157,38 +157,82 @@
     };
 
     macros {
+        macro_copy: macro_copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LEFT_GUI>,
+                <&macro_tap &kp C>,
+                <&macro_release &kp LEFT_GUI>;
+        };
+
+        macro_paste: macro_paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LEFT_GUI>,
+                <&macro_tap &kp V>,
+                <&macro_release &kp LEFT_GUI>;
+        };
+
+        macro_cut: macro_cut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LEFT_GUI>,
+                <&macro_tap &kp X>,
+                <&macro_release &kp LEFT_GUI>;
+        };
+
+        macro_select_all: macro_select_all {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LEFT_GUI>,
+                <&macro_tap &kp A>,
+                <&macro_release &kp LEFT_GUI>;
+        };
+
+        macro_undo: macro_undo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LEFT_GUI>,
+                <&macro_tap &kp Z>,
+                <&macro_release &kp LEFT_GUI>;
+        };
     };
 
     combos {
         compatible = "zmk,combos";
-
-        combo_copy {
-            bindings = <&kp LG(C)>;
-            key-positions = <48 49>;
-        };
-
-        combo_paste {
-            bindings = <&kp LG(V)>;
-            key-positions = <49 50>;
-        };
-
-        combo_cut {
-            bindings = <&kp LG(X)>;
-            key-positions = <47 48>;
-        };
 
         combo_caps_word {
             bindings = <&caps_word>;
             key-positions = <32 41>;
         };
 
+        combo_copy {
+            bindings = <&macro_copy>;
+            key-positions = <48 49>;
+        };
+
+        combo_paste {
+            bindings = <&macro_paste>;
+            key-positions = <49 50>;
+        };
+
+        combo_cut {
+            bindings = <&macro_cut>;
+            key-positions = <47 48>;
+        };
+
         combo_select_all {
-            bindings = <&kp LG(A)>;
+            bindings = <&macro_select_all>;
             key-positions = <50 47>;
         };
 
         combo_undo {
-            bindings = <&kp LG(Z)>;
+            bindings = <&macro_undo>;
             key-positions = <50 48>;
         };
     };
