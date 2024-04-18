@@ -104,7 +104,7 @@
         sr_lh_6: sr_lh_6 {
             compatible = "zmk,behavior-mod-morph";
             label = "SYMBOL_ROW_LH_6";
-            bindings = <&kp N5>, <&kp EQUAL>>;
+            bindings = <&kp N5>, <&kp LS(N5)>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
